@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/error-handling-example-runner.iml" filepath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/error-handling-example-runner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/error-handling-parent/error-handling-parent.iml" filepath="$PROJECT_DIR$/error-handling-parent/error-handling-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/error-handling-workitem-handlers.iml" filepath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/error-handling-workitem-handlers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pam7-examples.iml" filepath="$PROJECT_DIR$/pam7-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/error-handling-parent/error-handling-kjar/service-exception-handler-kjar.iml" filepath="$PROJECT_DIR$/error-handling-parent/error-handling-kjar/service-exception-handler-kjar.iml" />
+    </modules>
+  </component>
+</project>
