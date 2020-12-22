@@ -3,6 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/error-handling-parent/error-handling-kjar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/error-handling-parent/service-exception-handler-kjar" vcs="Git" />
   </component>
 </project>

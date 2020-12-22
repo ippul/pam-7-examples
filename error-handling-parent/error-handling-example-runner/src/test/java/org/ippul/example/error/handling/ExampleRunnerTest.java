@@ -51,20 +51,20 @@ public class ExampleRunnerTest {
     }
 
 
-    @Test
-    public void processWithErrorHandlingTest(){
-        final ProcessServicesClient processServicesClient = getKieServicesClient().getServicesClient(ProcessServicesClient.class);
-        final UserTaskServicesClient userTaskServicesClient = getKieServicesClient().getServicesClient(UserTaskServicesClient.class);
-        final QueryServicesClient queryServicesClient = getKieServicesClient().getServicesClient(QueryServicesClient.class);
-        final Long processInstanceId = processServicesClient.startProcess(containerId, "service-exception-handler-kjar.error-throwing-process");
-        final List<TaskSummary> tasksAssignedAsPotentialOwner = userTaskServicesClient.findTasksAssignedAsPotentialOwner(username, 0, 10000);
-        userTaskServicesClient.claimTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
-        userTaskServicesClient.startTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
-        Map<String, Object> taskParameters = new HashMap<String, Object>();
-        taskParameters.put("errorFixed", "Error has been fixed manually!");
-        userTaskServicesClient.completeTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username, taskParameters);
-        final ProcessInstance processInstanceById = queryServicesClient.findProcessInstanceById(processInstanceId);
-        assertEquals(new Integer(2), processInstanceById.getState());
-    }
+//    @Test
+//    public void processWithErrorHandlingTest(){
+//        final ProcessServicesClient processServicesClient = getKieServicesClient().getServicesClient(ProcessServicesClient.class);
+//        final UserTaskServicesClient userTaskServicesClient = getKieServicesClient().getServicesClient(UserTaskServicesClient.class);
+//        final QueryServicesClient queryServicesClient = getKieServicesClient().getServicesClient(QueryServicesClient.class);
+//        final Long processInstanceId = processServicesClient.startProcess(containerId, "service-exception-handler-kjar.error-throwing-process");
+//        final List<TaskSummary> tasksAssignedAsPotentialOwner = userTaskServicesClient.findTasksAssignedAsPotentialOwner(username, 0, 10000);
+//        userTaskServicesClient.claimTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
+//        userTaskServicesClient.startTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
+//        Map<String, Object> taskParameters = new HashMap<String, Object>();
+//        taskParameters.put("errorFixed", "Error has been fixed manually!");
+//        userTaskServicesClient.completeTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username, taskParameters);
+//        final ProcessInstance processInstanceById = queryServicesClient.findProcessInstanceById(processInstanceId);
+//        assertEquals(new Integer(2), processInstanceById.getState());
+//    }
 
 }

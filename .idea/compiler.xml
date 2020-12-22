@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="error-handling-kjar" />
         <module name="error-handling-workitem-handlers" />
-        <module name="service-exception-handler-kjar" />
         <module name="error-handling-example-runner" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="error-handling-example-runner" target="1.8" />
+      <module name="error-handling-kjar" target="1.5" />
       <module name="error-handling-parent" target="1.5" />
-      <module name="error-handling-workitem-handlers" target="1.5" />
+      <module name="error-handling-workitem-handlers" target="7" />
       <module name="pam7-examples" target="1.5" />
-      <module name="service-exception-handler-kjar" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

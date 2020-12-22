@@ -12,7 +12,7 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.ippul.example.workitems.AWorkitemThrowAnException("service-exception-handler-kjar.error-handling-process", "RETRY")</identifier>
+            <identifier>new org.ippul.example.workitems.AWorkitemThrowAnException("service-exception-handler-kjar.error-handling-process", "RETRY", 2)</identifier>
             <parameters/>
             <name>MyWorkitem</name>
         </work-item-handler>

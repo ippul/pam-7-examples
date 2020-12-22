@@ -3,32 +3,24 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <id>maven-central-2</id>
+        <url>https://repo1.maven.org/maven2/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-fuse-ga</id>
-        <url>https://repository.jboss.org/nexus/content/groups/ga</url>
+        <id>fusesource-ea</id>
+        <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>maven-central-1</id>
-        <url>https://repo.maven.apache.org/maven2/</url>
+        <id>jboss-public-repository-group-1</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -51,6 +43,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>fuse-public-repository</id>
         <url>https://repo.fusesource.com/nexus/content/groups/public</url>
         <source>SETTINGS</source>
@@ -59,24 +59,24 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource-ea</id>
-        <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+        <id>jboss-fuse-ga</id>
+        <url>https://repository.jboss.org/nexus/content/groups/ga</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>maven-central-2</id>
-        <url>https://repo1.maven.org/maven2/</url>
+        <id>jboss-public-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group-1</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <id>maven-central-1</id>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
