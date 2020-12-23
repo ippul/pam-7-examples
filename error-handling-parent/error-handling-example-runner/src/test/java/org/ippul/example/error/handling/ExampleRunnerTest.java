@@ -15,14 +15,15 @@ import org.kie.server.client.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 
 public class ExampleRunnerTest {
-    private static final String username = "rhpamadmin";
+    private static final String username = "rhpamAdmin";
     private static final String password = "Pa$$w0rd";
     private static final String url = "http://localhost:8080/kie-server/services/rest/server";
-    private static final String containerId = "org.ippul.example.error-handling-kjar";
+    private static final String containerId = "error-handling-kjar_1.0";
 
     public KieServicesClient getKieServicesClient() {
         final KieServicesConfiguration config = KieServicesFactory.newRestConfiguration(url, username, password);
@@ -51,20 +52,39 @@ public class ExampleRunnerTest {
     }
 
 
-//    @Test
-//    public void processWithErrorHandlingTest(){
-//        final ProcessServicesClient processServicesClient = getKieServicesClient().getServicesClient(ProcessServicesClient.class);
-//        final UserTaskServicesClient userTaskServicesClient = getKieServicesClient().getServicesClient(UserTaskServicesClient.class);
-//        final QueryServicesClient queryServicesClient = getKieServicesClient().getServicesClient(QueryServicesClient.class);
-//        final Long processInstanceId = processServicesClient.startProcess(containerId, "service-exception-handler-kjar.error-throwing-process");
-//        final List<TaskSummary> tasksAssignedAsPotentialOwner = userTaskServicesClient.findTasksAssignedAsPotentialOwner(username, 0, 10000);
-//        userTaskServicesClient.claimTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
-//        userTaskServicesClient.startTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
-//        Map<String, Object> taskParameters = new HashMap<String, Object>();
-//        taskParameters.put("errorFixed", "Error has been fixed manually!");
-//        userTaskServicesClient.completeTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username, taskParameters);
-//        final ProcessInstance processInstanceById = queryServicesClient.findProcessInstanceById(processInstanceId);
-//        assertEquals(new Integer(2), processInstanceById.getState());
-//    }
+    @Test
+    public void processWithErrorHandlingTest() throws InterruptedException {
+        final ProcessServicesClient processServicesClient = getKieServicesClient().getServicesClient(ProcessServicesClient.class);
+        final UserTaskServicesClient userTaskServicesClient = getKieServicesClient().getServicesClient(UserTaskServicesClient.class);
+        final QueryServicesClient queryServicesClient = getKieServicesClient().getServicesClient(QueryServicesClient.class);
+        final Long processInstanceId = processServicesClient.startProcess(containerId, "service-exception-handler-kjar.error-throwing-process");
+        final List<ProcessInstance> processInstancesByParent = processServicesClient.findProcessInstancesByParent(containerId, processInstanceId, 0, 1000);
+        {// first retry
+            final Optional<ProcessInstance> first = processInstancesByParent.stream().filter(processInstance ->
+                    processInstance.getProcessId().equals("service-exception-handler-kjar.error-handling-process")).findFirst();
+            Assert.assertTrue(first.isPresent());
+        }
+        Thread.sleep(5000l);
+        {// second retry
+            final Optional<ProcessInstance> first = processInstancesByParent.stream().filter(processInstance ->
+                    processInstance.getProcessId().equals("service-exception-handler-kjar.error-handling-process")).findFirst();
+            Assert.assertTrue(first.isPresent());
+        }
+        Thread.sleep(5000l);
+        {// Third retry
+            final Optional<ProcessInstance> first = processInstancesByParent.stream().filter(processInstance ->
+                    processInstance.getProcessId().equals("service-exception-handler-kjar.error-handling-process")).findFirst();
+            Assert.assertTrue(first.isPresent());
+        }
+        Thread.sleep(7000l);
+        final List<TaskSummary> tasksAssignedAsPotentialOwner = userTaskServicesClient.findTasksAssignedAsPotentialOwner(username, 0, 10000);
+        userTaskServicesClient.claimTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
+        userTaskServicesClient.startTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username);
+        final Map<String, Object> taskParameters = new HashMap<String, Object>();
+        taskParameters.put("errorFixed", "Error has been fixed manually!");
+        userTaskServicesClient.completeTask(containerId, tasksAssignedAsPotentialOwner.get(0).getId(),username, taskParameters);
+        final ProcessInstance processInstanceById = queryServicesClient.findProcessInstanceById(processInstanceId);
+        assertEquals(Integer.valueOf(2), processInstanceById.getState());
+    }
 
 }

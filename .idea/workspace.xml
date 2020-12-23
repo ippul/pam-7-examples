@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3121e08-e25b-4914-b5e8-f02e0f03ad09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/exceptions/HumanActionNeededException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/error-handling-example-runner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/error-handling-example-runner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/src/test/java/org/ippul/example/error/handling/ExampleRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/src/test/java/org/ippul/example/error/handling/ExampleRunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/error-handling-example-runner-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/surefire-reports/TEST-org.ippul.example.error.handling.ExampleRunnerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/surefire-reports/TEST-org.ippul.example.error.handling.ExampleRunnerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/surefire-reports/org.ippul.example.error.handling.ExampleRunnerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/target/surefire-reports/org.ippul.example.error.handling.ExampleRunnerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/error-handling-workitem-handlers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/error-handling-workitem-handlers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/AWorkitemThrowAnException.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/AWorkitemThrowAnException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/classes/org/ippul/example/workitems/AWorkitemThrowAnException.class" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/classes/org/ippul/example/workitems/AWorkitemThrowAnException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/error-handling-workitem-handlers-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/error-handling-workitem-handlers-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,18 +49,57 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ExampleRunnerTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="error-handling-example-runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ippul.example.error.handling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ippul.example.error.handling" />
+      <option name="MAIN_CLASS_NAME" value="org.ippul.example.error.handling.ExampleRunnerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleRunnerTest.processWithErrorHandlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="error-handling-example-runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ippul.example.error.handling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ippul.example.error.handling" />
+      <option name="MAIN_CLASS_NAME" value="org.ippul.example.error.handling.ExampleRunnerTest" />
+      <option name="METHOD_NAME" value="processWithErrorHandlingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExampleRunnerTest" />
+        <item itemvalue="JUnit.ExampleRunnerTest.processWithErrorHandlingTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608641294335</updated>
-      <workItem from="1608641295469" duration="12493000" />
+      <workItem from="1608641295469" duration="15955000" />
     </task>
     <servers />
   </component>
