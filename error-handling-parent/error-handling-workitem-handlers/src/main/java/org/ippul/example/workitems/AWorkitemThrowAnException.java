@@ -30,6 +30,8 @@ public class AWorkitemThrowAnException extends AbstractLogOrThrowWorkItemHandler
         if (retryCount <= maxAutomaticRetry) {
             System.out.println("Retry count: " + retryCount);
             cleanWorkitemParameter(workItem);
+            //increment retry counter
+            workItem.getParameters().put("retryCount", retryCount + 1);
             handleException(new AutomaticRetryException("Automatic retry exception [retry: " + retryCount + "]"));
         } else if (retryCount > maxAutomaticRetry && (workItem.getParameter("errorFixed") == null || ((String)workItem.getParameter("errorFixed")).equals(""))) {
             System.out.println("Too many retry. Need Human Fix");

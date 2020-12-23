@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3121e08-e25b-4914-b5e8-f02e0f03ad09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/src/test/java/org/ippul/example/error/handling/ExampleRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-example-runner/src/test/java/org/ippul/example/error/handling/ExampleRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/AWorkitemThrowAnException.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/AWorkitemThrowAnException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608641294335</updated>
-      <workItem from="1608641295469" duration="15955000" />
+      <workItem from="1608641295469" duration="16603000" />
     </task>
     <servers />
   </component>
@@ -121,7 +121,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/error-handling-parent/error-handling-workitem-handlers/src/main/java/org/ippul/example/workitems/AWorkitemThrowAnException.java</url>
-          <line>34</line>
+          <line>36</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
